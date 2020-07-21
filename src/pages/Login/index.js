@@ -55,7 +55,8 @@ const Login = () => {
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: 22,
+    paddingVertical: 22,
+    paddingHorizontal: 50,
     backgroundColor: 'white',
     flex: 1,
   },

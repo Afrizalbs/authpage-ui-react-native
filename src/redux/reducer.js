@@ -23,7 +23,6 @@ const RegisterReducer = (state = initialStateRegister, action) => {
 
 const initialStateLogin = {
   form: {
-    fullName: '',
     email: '',
     password: '',
   },
