@@ -11,22 +11,23 @@ const WelcomeAuth = ({navigation}) => {
   return (
     <View style={styles.wrapper.container}>
       <View style={styles.wrapper.containerLogo}>
-        <WelcomeAnimation width={319} height={217} />
-        <View style={styles.space(15)} />
+        <WelcomeAnimation width={219} height={117} />
+        <View style={styles.space(10)} />
         <View style={styles.wrapper.logo} />
         <Text style={styles.text.brand}>Welcome to Fake Taxi</Text>
       </View>
-      <View style={styles.space(80)} />
-      <ActionButton
-        desc="Silahkan Register jika Anda belum memiliki Akun"
-        title="Register"
-        onPress={() => aksiPindahHalaman('Register')}
-      />
-      <ActionButton
-        desc="Silahkan Melakukan Login jika Anda sudah memiliki Akun"
-        title="Login"
-        onPress={() => aksiPindahHalaman('Login')}
-      />
+      <View>
+        <ActionButton
+          desc="Silahkan Register jika Anda belum memiliki Akun"
+          title="Register"
+          onPress={() => aksiPindahHalaman('Register')}
+        />
+        <ActionButton
+          desc="Silahkan Melakukan Login jika Anda sudah memiliki Akun"
+          title="Login"
+          onPress={() => aksiPindahHalaman('Login')}
+        />
+      </View>
     </View>
   );
 };
@@ -36,16 +37,18 @@ const styles = {
     container: {
       backgroundColor: 'white',
       flex: 1,
-      justifyContent: 'center',
+      justifyContent: 'space-between',
       alignItems: 'center',
+      padding: 20,
     },
     containerLogo: {
       justifyContent: 'center',
       alignItems: 'center',
+      marginTop: 20,
     },
   },
   text: {
-    brand: {fontSize: 35, fontWeight: 'bold', color: colors.default},
+    brand: {fontSize: 20, fontWeight: 'bold', color: colors.default},
   },
   space: (value) => {
     return {

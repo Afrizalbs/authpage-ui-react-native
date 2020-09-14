@@ -15,12 +15,12 @@ const input = ({placeholder, ...rest}) => {
 
 const styles = StyleSheet.create({
   input: {
-    borderWidth: 2,
-    borderRadius: 40,
+    borderWidth: 1,
+    borderRadius: 25,
     borderColor: colors.default,
-    paddingVertical: 12,
-    paddingHorizontal: 18,
-    fontSize: 25,
+    paddingVertical: 7,
+    paddingHorizontal: 10,
+    fontSize: 14,
     color: colors.default,
   },
 });

@@ -26,26 +26,26 @@ const Login = () => {
     <View style={styles.wrapper}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View>
-          <View style={styles.space(30)} />
-          <LoginAnimation width={319} height={217} />
+          <View style={styles.space(15)} />
+          <LoginAnimation width={219} height={117} />
           <View style={styles.space(15)} />
           <Text style={styles.text}>
             Silahkan isi Form untuk Login Akun Anda
           </Text>
-          <View style={styles.space(90)} />
+          <View style={styles.space(70)} />
           <Input
             placeholder="Email"
             value={form.email}
             onChangeText={(value) => onInputChange(value, 'email')}
           />
-          <View style={styles.space(33)} />
+          <View style={styles.space(20)} />
           <Input
             placeholder="Password"
             value={form.password}
             onChangeText={(value) => onInputChange(value, 'password')}
             secureTextEntry={true}
           />
-          <View style={styles.space(90)} />
+          <View style={styles.space(70)} />
           <ActionButton title="Login" onPress={sendData} />
         </View>
       </ScrollView>
@@ -55,16 +55,16 @@ const Login = () => {
 
 const styles = StyleSheet.create({
   wrapper: {
-    paddingVertical: 22,
-    paddingHorizontal: 50,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
     backgroundColor: 'white',
     flex: 1,
   },
   text: {
-    fontSize: 25,
+    fontSize: 18,
     fontWeight: 'bold',
     color: colors.default,
-    maxWidth: 320,
+    maxWidth: 250,
   },
   space: (value) => {
     return {

@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {Text, TouchableOpacity} from 'react-native';
 import {colors} from '../../../utils/colors';
 
 const Button = ({title, onPress}) => {
@@ -14,14 +13,14 @@ const Button = ({title, onPress}) => {
 const styles = {
   wrapper: {
     btn: {
-      borderRadius: 40,
+      borderRadius: 25,
       backgroundColor: colors.default,
-      paddingVertical: 15,
+      paddingVertical: 13,
     },
   },
   text: {
     color: 'white',
-    fontSize: 25,
+    fontSize: 14,
     textTransform: 'uppercase',
     textAlign: 'center',
   },

@@ -13,13 +13,13 @@ const ActionButton = ({desc, title, onPress}) => {
 };
 
 const styles = {
-  wrapper: {maxWidth: 319, marginBottom: 43},
+  wrapper: {marginBottom: 10},
   text: {
     desc: {
-      fontSize: 14,
+      fontSize: 12,
       color: colors.text.default,
       marginBottom: 10,
-      paddingHorizontal: 15,
+      paddingHorizontal: 10,
       textAlign: 'center',
     },
   },
