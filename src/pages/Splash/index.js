@@ -2,18 +2,21 @@ import React, {useEffect} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {colors} from '../../utils/colors';
 import {SplashAnimation} from '../../assets';
+import LottieView from 'lottie-react-native';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.replace('WelcomeAuth');
-    }, 3000);
+    }, 3500);
   });
   return (
     <View style={styles.wrapper}>
-      <SplashAnimation height={80} width={90} />
-      <Text style={styles.text}>Ojol App</Text>
-      <Text style={styles.caption}>Siap mengantarmu kemana saja</Text>
+      <LottieView
+        source={require('../../assets/17895-wear-mask.json')}
+        autoPlay
+        loop
+      />
     </View>
   );
 };
@@ -21,7 +24,6 @@ const Splash = ({navigation}) => {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    backgroundColor: '#fffffe',
     alignItems: 'center',
     justifyContent: 'center',
   },
