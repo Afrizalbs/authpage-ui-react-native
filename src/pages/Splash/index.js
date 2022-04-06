@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import {colors} from '../../utils/colors';
-import {SplashAnimation} from '../../assets';
 import LottieView from 'lottie-react-native';
+import React, {useEffect} from 'react';
+import {StyleSheet, View} from 'react-native';
+import {colors} from '../../utils/colors';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
@@ -16,6 +15,7 @@ const Splash = ({navigation}) => {
         source={require('../../assets/17895-wear-mask.json')}
         autoPlay
         loop
+        style={styles.splashLogo}
       />
     </View>
   );
@@ -27,15 +27,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
-  text: {
-    fontSize: 20,
-    fontWeight: '800',
-    color: colors.default,
-  },
-  caption: {
-    fontSize: 14,
-    color: colors.default,
+  splashLogo: {
+    height: 200,
+    width: 200,
   },
 });
 
