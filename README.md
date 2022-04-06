@@ -13,4 +13,4 @@ Fitur:
 |                 Mobile                  |                Mobile                 |
 | :-------------------------------------: | :-----------------------------------: |
 | ![Splashscren View](./splashscreen.jpg) | ![Welcome View](./welcome-screen.jpg) |
-| ![Register View](./register-screen.jpg  |   ![Login View](./login-screen.jpg)   |
+| ![Register View](./register-screen.jpg) |   ![Login View](./login-screen.jpg)   |
