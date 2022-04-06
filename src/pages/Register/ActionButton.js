@@ -10,8 +10,4 @@ const ActionButton = ({title, onPress}) => {
   );
 };
 
-const styles = {
-  wrapper: {maxWidth: 419},
-};
-
 export default ActionButton;
