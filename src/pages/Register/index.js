@@ -7,7 +7,7 @@ import {RegisAnimation} from '../../assets';
 import {useSelector, useDispatch} from 'react-redux';
 import {setForm} from '../../redux';
 
-const Register = () => {
+const Register = ({navigation}) => {
   // management state pakai redux
   const {form} = useSelector((state) => state.RegisterReducer);
   const dispatch = useDispatch();
@@ -16,11 +16,10 @@ const Register = () => {
     dispatch(setForm(inputType, value));
   };
 
-  const sendData = () => {
+  const register = () => {
     console.log('data yang dikirim : ', form);
+    navigation.replace('MainApp');
   };
-
-  // management state lokal
 
   return (
     <View style={styles.wrapper}>
@@ -53,7 +52,7 @@ const Register = () => {
           />
         </View>
         <View style={styles.space(55)} />
-        <ActionButton title="Daftar" onPress={sendData} />
+        <ActionButton title="Daftar" onPress={register} />
       </ScrollView>
     </View>
   );

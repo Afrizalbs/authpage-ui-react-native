@@ -7,7 +7,7 @@ import {LoginAnimation} from '../../assets';
 import {useSelector, useDispatch} from 'react-redux';
 import {setForm} from '../../redux';
 
-const Login = () => {
+const Login = ({navigation}) => {
   // management state pakai redux
   const {form} = useSelector((state) => state.LoginReducer);
   const dispatch = useDispatch();
@@ -16,11 +16,10 @@ const Login = () => {
     dispatch(setForm(inputType, value));
   };
 
-  const sendData = () => {
+  const login = () => {
     console.log('data yang dikirim : ', form);
+    navigation.navigate('MainApp');
   };
-
-  // management state lokal
 
   return (
     <View style={styles.wrapper}>
@@ -46,7 +45,7 @@ const Login = () => {
             secureTextEntry={true}
           />
           <View style={styles.space(70)} />
-          <ActionButton title="Login" onPress={sendData} />
+          <ActionButton title="Login" onPress={login} />
         </View>
       </ScrollView>
     </View>
